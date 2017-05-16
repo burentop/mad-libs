@@ -1,0 +1,16 @@
+body {
+  background: gray;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.container {
+  background: white;
+  margin: 40px auto;
+}

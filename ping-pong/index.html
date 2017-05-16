@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Ping Pong</title>
   </head>
   <body>
 
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number" name="" value="">
-      <button type="submit" name="button">Submit</button>
+    <div class="container">
+
+    <h1>The Great Calculator / Ping-Pong Combo App</h1>
+    <h3>Pick Your Activity, or Try All Three!</h3>
+
+    <form id="signup" class="form-group" action="index.html" method="post">
+      <label for="email">Join our mailing list</label>
+      <input id="email" class="form-control" type="text" placeholder="Enter your email:">
+      <button class="btn btn-default" type="submit" name="button">Submit</button>
     </form>
-    <form id="signup" class="" action="index.html" method="post">
-      <label for="email">Enter your email:</label>
-      <input id="email" type="text" name="" value="">
-      <button type="submit" name="button">Submit</button>
+
+    <form id="ping-pong-form" class="form-group">
+      <label for="goal">Activate the Ping-Pong App</label>
+      <input id="goal" class="form-control" type="number" placeholder="Enter a number:">
+      <button class="btn btn-default" type="submit" name="button">Submit</button>
+    </form>
+
+    <form id="calc-form" class="form-group">
+      <label>Do Simple Calculations</label>
+      <input id="num1" class="form-control" type="number" placeholder="First number">
+      <input id="num2" class="form-control" type="number" placeholder="Second number">
+      <select id="op" class="form-control" name="select">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <button class="btn btn-default" type="submit" name="button">Submit</button>
     </form>
     <ul id="solution">
 
     </ul>
+
+  </div>
 
   </body>
 </html>
